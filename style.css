@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 50%;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+input, label{
+    display: block;
+    width: 35%;
+    height: 30px;
+    margin: auto;
+}
+
+input{
+    border-radius: 10px;
+    border: none;
+    background: #77dd7762;
+    color: #1f3a1f;
+    font-size: 1.2em;
+    padding: 8px;
+}
+.btn{
+    width: 18%;
+    display: block;
+    height: 30px;
+    margin: auto;
+    border-radius: 10px;
+    border: none;
+    background: #5aaa5a;
+
+}
+
+.fault{
+    border: 1px solid red;
+    background: rgba(255, 0, 0, 0.582);
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+#resultat{
+    font-size: 2em;
+    color: rgb(51, 19, 66);
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    form{
+        width: 100%;
+    }
+    input, label, .btn{
+        display: block;
+        width: 75%;
+        height: 30px;
+        margin: auto;
+    }
+  }

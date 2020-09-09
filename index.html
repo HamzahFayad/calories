@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Kalo</title>
+  </head>
+  <body>
+    <form>
+      <h1>Kalorienbedarf Rechner - Grundumsatz</h1>
+      <input type="radio" id="weiblich" name="ra" value="weiblich" />
+      <label for="weiblich">weiblich</label>
+      <input type="radio" id="männlich" name="ra" value="männlich" />
+      <label for="männlich">männlich</label>
+
+      <label for="alter">Alter:</label>
+      <input
+        type="number"
+        id="alter"
+        name="alter"
+        min="18"
+        max="99"
+      /><br>
+
+      <label for="gewicht">Gewicht in kg:</label>
+      <input type="number" id="gewicht" name="gewicht" min="40" max="200" /><br>
+
+      <label for="grösse">Größe in cm:</label>
+      <input type="number" id="grösse" name="grösse" min="100" max="220" /><br>
+    </form>
+    <button class="btn" onclick="berechnen()">Grundumsatz berechnen</button><br><br>
+    <div id="resultat"></div>
+
+  </body>
+</html>
